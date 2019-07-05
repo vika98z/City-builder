@@ -666,6 +666,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 614526372}
   m_CullTransparentMesh: 0
+--- !u!1 &622664231 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1134808360282885117, guid: 8cb539507e53844abbc6cac81da2fb2a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1134808360310772361}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &769895231
 GameObject:
   m_ObjectHideFlags: 0
@@ -1008,11 +1014,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1224278625}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 19.721596, y: 19.9301, z: 24.146288}
-  m_Center: {x: 10.215538, y: 3.8862514, z: -12.323661}
+  m_Size: {x: 20.366766, y: 19.9301, z: 20.136648}
+  m_Center: {x: 10.245999, y: 3.8862514, z: -10.318841}
+--- !u!114 &1224278630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224278625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 606f0eba44b745a4a9efbb3312b6561a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Green: {fileID: 2100000, guid: a31fa2c697e7942c8a0ebd68ea2e4b43, type: 2}
+  Red: {fileID: 2100000, guid: dcdcf5d15f035624f93d402b25448bf4, type: 2}
+  Base: {fileID: 622664231}
 --- !u!1 &1325598774
 GameObject:
   m_ObjectHideFlags: 0
@@ -1038,7 +1059,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1325598774}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1325598776
 Camera:
   m_ObjectHideFlags: 0
@@ -1046,7 +1067,7 @@ Camera:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1325598774}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
@@ -1975,8 +1996,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 30.0705, y: 13.48118, z: 18.992872}
-  m_Center: {x: 14.96797, y: -0.4806602, z: -9.397662}
+  m_Size: {x: 29.81355, y: 14.653669, z: 19.368078}
+  m_Center: {x: 15.096444, y: -1.066905, z: -9.585265}
 --- !u!54 &1961925126
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2257,6 +2278,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Building2x2
       objectReference: {fileID: 0}
+    - target: {fileID: 1134808359842559631, guid: 8cb539507e53844abbc6cac81da2fb2a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Object
+      objectReference: {fileID: 0}
     - target: {fileID: 1134808359842559630, guid: 8cb539507e53844abbc6cac81da2fb2a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2400,6 +2426,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Building3x3
       objectReference: {fileID: 0}
+    - target: {fileID: 5544763611581036915, guid: 16515dd91ebb84b3a8f20dc29c23264f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Object
+      objectReference: {fileID: 0}
     - target: {fileID: 5544763611581036912, guid: 16515dd91ebb84b3a8f20dc29c23264f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2469,6 +2500,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Building3x2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6837885162318440743, guid: add0de247d5e34d7a9fd680d17f7d65a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Object
       objectReference: {fileID: 0}
     - target: {fileID: 6837885162318440736, guid: add0de247d5e34d7a9fd680d17f7d65a,
         type: 3}

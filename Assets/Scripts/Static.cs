@@ -5,4 +5,6 @@ using UnityEngine;
 public static class Static
 {
     public static bool isBuild;
+
+    public static bool isCollision = false;
 }

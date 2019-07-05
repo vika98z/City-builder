@@ -16,8 +16,11 @@ public class ModeButtonClick : MonoBehaviour
 
     public void RegularModeClick()
     {
-        Static.isBuild = false;
-        frontCamera.enabled = true;
-        topCamera.enabled = false;
+        if (!Static.isCollision)
+        {
+            Static.isBuild = false;
+            frontCamera.enabled = true;
+            topCamera.enabled = false;
+        }
     }
 }
