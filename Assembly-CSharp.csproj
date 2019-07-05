@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\3rd-party-resources\SimpleGridShader\DistanceScaling.cs" />
+     <Compile Include="Assets\Scripts\ModeButtonClick.cs" />
      <Compile Include="Assets\Scripts\MoveObject.cs" />
      <Compile Include="Assets\Scripts\Static.cs" />
      <None Include="Assets\3rd-party-resources\SimpleGridShader\README.txt" />
