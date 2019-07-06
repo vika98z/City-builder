@@ -56,7 +56,7 @@
      <Compile Include="Assets\3rd-party-resources\SimpleGridShader\DistanceScaling.cs" />
      <Compile Include="Assets\Scripts\CollisionScript.cs" />
      <Compile Include="Assets\Scripts\CreateResidence.cs" />
-     <Compile Include="Assets\Scripts\GetResidenceResourses.cs" />
+     <Compile Include="Assets\Scripts\GetResourses.cs" />
      <Compile Include="Assets\Scripts\ModeButtonClick.cs" />
      <Compile Include="Assets\Scripts\MoveObject.cs" />
      <Compile Include="Assets\Scripts\ResourseUpdate.cs" />

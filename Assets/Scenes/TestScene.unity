@@ -1656,6 +1656,18 @@ MonoBehaviour:
   Green: {fileID: 2100000, guid: a31fa2c697e7942c8a0ebd68ea2e4b43, type: 2}
   Red: {fileID: 2100000, guid: dcdcf5d15f035624f93d402b25448bf4, type: 2}
   Base: {fileID: 622664231}
+--- !u!114 &1224278631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224278625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dfdff60be14bed45998eef7aea7aa76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1309729691 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7051956560903175720, guid: ea2d4810dcf0148cbbdf9f05d44ddfe4,
@@ -2393,7 +2405,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1536327184}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d8dcf70cd2edb241a24b537829b6e9f, type: 3}
+  m_Script: {fileID: 11500000, guid: 0dfdff60be14bed45998eef7aea7aa76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1536327186
@@ -2914,6 +2926,18 @@ MonoBehaviour:
   Green: {fileID: 2100000, guid: a31fa2c697e7942c8a0ebd68ea2e4b43, type: 2}
   Red: {fileID: 2100000, guid: dcdcf5d15f035624f93d402b25448bf4, type: 2}
   Base: {fileID: 650904887}
+--- !u!114 &1961925128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961925122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dfdff60be14bed45998eef7aea7aa76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1968746565 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5393388302527726459, guid: affe66bd566d942f78badd68c1a973d1,
@@ -3412,7 +3436,7 @@ PrefabInstance:
     - target: {fileID: 1134808359842559631, guid: 8cb539507e53844abbc6cac81da2fb2a,
         type: 3}
       propertyPath: m_Name
-      value: Building2x2
+      value: IronProcessing
       objectReference: {fileID: 0}
     - target: {fileID: 1134808359842559631, guid: 8cb539507e53844abbc6cac81da2fb2a,
         type: 3}
@@ -3565,7 +3589,7 @@ PrefabInstance:
     - target: {fileID: 5544763611581036915, guid: 16515dd91ebb84b3a8f20dc29c23264f,
         type: 3}
       propertyPath: m_Name
-      value: Building3x3
+      value: Residence
       objectReference: {fileID: 0}
     - target: {fileID: 5544763611581036915, guid: 16515dd91ebb84b3a8f20dc29c23264f,
         type: 3}
@@ -3640,7 +3664,7 @@ PrefabInstance:
     - target: {fileID: 6837885162318440743, guid: add0de247d5e34d7a9fd680d17f7d65a,
         type: 3}
       propertyPath: m_Name
-      value: Building3x2
+      value: WoodProcessing
       objectReference: {fileID: 0}
     - target: {fileID: 6837885162318440743, guid: add0de247d5e34d7a9fd680d17f7d65a,
         type: 3}

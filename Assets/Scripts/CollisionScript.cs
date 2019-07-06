@@ -16,16 +16,14 @@ public class CollisionScript : MonoBehaviour
 
     void OnTriggerStay(Collider col)
     {
-        GameObject enteredObject = col.gameObject;
-        Debug.Log(enteredObject.name);
-        //GameObject Base = GameObject.Find
+        //GameObject enteredObject = col.gameObject;
         Base.GetComponent<Renderer>().material = Red;
         Static.isCollision = true;
     }
 
     void OnTriggerExit(Collider col)
     {
-        GameObject enteredObject = col.gameObject;
+        //GameObject enteredObject = col.gameObject;
         Base.GetComponent<Renderer>().material = Green;
         Static.isCollision = false;
     }
