@@ -55,8 +55,11 @@
   <ItemGroup>
      <Compile Include="Assets\3rd-party-resources\SimpleGridShader\DistanceScaling.cs" />
      <Compile Include="Assets\Scripts\CollisionScript.cs" />
+     <Compile Include="Assets\Scripts\CreateResidence.cs" />
+     <Compile Include="Assets\Scripts\GetResidenceResourses.cs" />
      <Compile Include="Assets\Scripts\ModeButtonClick.cs" />
      <Compile Include="Assets\Scripts\MoveObject.cs" />
+     <Compile Include="Assets\Scripts\ResourseUpdate.cs" />
      <Compile Include="Assets\Scripts\Static.cs" />
      <None Include="Assets\3rd-party-resources\SimpleGridShader\README.txt" />
      <None Include="Assets\Shaders\GridShader.shader" />

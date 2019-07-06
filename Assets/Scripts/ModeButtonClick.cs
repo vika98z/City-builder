@@ -6,12 +6,14 @@ public class ModeButtonClick : MonoBehaviour
 {
     public Camera frontCamera;
     public Camera topCamera;
+    public GameObject panel;
 
     public void BuildModeClick()
     {
         Static.isBuild = true;
         frontCamera.enabled = false;
         topCamera.enabled = true;
+        panel.SetActive(true);
     }
 
     public void RegularModeClick()
@@ -21,6 +23,7 @@ public class ModeButtonClick : MonoBehaviour
             Static.isBuild = false;
             frontCamera.enabled = true;
             topCamera.enabled = false;
+            panel.SetActive(false);
         }
     }
 }
