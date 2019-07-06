@@ -11,4 +11,7 @@ public static class Static
     public static int Gold = 500;
     public static int Wood = 500;
     public static int Iron = 500;
+
+    public static bool woodProcessingIsBegin = false;
+    public static bool ironProcessingIsBegin = false;
 }
