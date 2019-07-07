@@ -40,4 +40,29 @@ public class CreateObject : MonoBehaviour
             Static.Wood -= 100;
         }
     }
+    public void CreateTree()
+    {
+        if (Static.Gold >= 50 && Static.Wood >= 200)
+        {
+            var randomPosition = new Vector3(Random.Range(1, 97), 14.6f, Random.Range(-99, -2));
+            var residence = GameObject.Find("Tree");
+            var obj = Instantiate(residence, randomPosition, Quaternion.identity) as GameObject;
+            obj.name = "Tree";
+            Static.Gold -= 50;
+            Static.Wood -= 200;
+        }
+    }
+
+    public void CreateBench()
+    {
+        if (Static.Gold >= 150 && Static.Iron >= 50)
+        {
+            var randomPosition = new Vector3(Random.Range(1, 97), 2.7f, Random.Range(-99, -2));
+            var residence = GameObject.Find("Bench");
+            var obj = Instantiate(residence, randomPosition, Quaternion.identity) as GameObject;
+            obj.name = "Bench";
+            Static.Gold -= 150;
+            Static.Iron -= 50;
+        }
+    }
 }
