@@ -27,7 +27,6 @@ public class CreateObject : MonoBehaviour
             Static.Gold -= 150;
         }
     }
-
     public void CreateIronProcessing()
     {
         if (Static.Gold >= 150 && Static.Wood >= 100)
@@ -52,7 +51,6 @@ public class CreateObject : MonoBehaviour
             Static.Wood -= 200;
         }
     }
-
     public void CreateBench()
     {
         if (Static.Gold >= 150 && Static.Iron >= 50)
@@ -63,6 +61,7 @@ public class CreateObject : MonoBehaviour
             obj.name = "Bench";
             Static.Gold -= 150;
             Static.Iron -= 50;
+
         }
     }
 }
