@@ -15,7 +15,7 @@ public class GetResourses : MonoBehaviour
         {
             InvokeRepeating("GetResources", 10, 10);
             InvokeRepeating("ChangeProgress", 1, 1);
-        }       
+        }
         isEnabledProgress = false;
         curProgress = 0;
         timerBegin = false;
@@ -110,7 +110,7 @@ public class GetResourses : MonoBehaviour
                         DrawLineProgress();
                     else
                         if (DrawButton())
-                            Static.woodProcessingIsBegin = true;
+                        Static.woodProcessingIsBegin = true;
                 }
                 else
                 if (gameObject.name == "IronProcessing")
@@ -121,7 +121,7 @@ public class GetResourses : MonoBehaviour
                         if (DrawButton())
                         Static.ironProcessingIsBegin = true;
                 }
-                
+
                 if (gameObject.name == "Residence")
                 {
                     Vector3 pos = Camera.main.WorldToScreenPoint(gameObject.transform.position);
@@ -168,7 +168,6 @@ public class GetResourses : MonoBehaviour
     {
         Vector3 pos = Camera.main.WorldToScreenPoint(gameObject.transform.position);
         var textSize = GUI.skin.label.CalcSize(new GUIContent("Начать производство"));
-        return GUI.Button(new Rect(pos.x - 10, Screen.height - pos.y - 12, textSize.x, textSize.y), "Начать производство");
+        return GUI.Button(new Rect(pos.x - 10, Screen.height - pos.y - 17, textSize.x + 3, textSize.y + 3), "Начать производство");
     }
 }
-

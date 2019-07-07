@@ -276,7 +276,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 66037754}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 78219187}
+        m_MethodName: CreateWoodProcessing
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &66037754
@@ -329,6 +340,7 @@ GameObject:
   - component: {fileID: 78219186}
   - component: {fileID: 78219185}
   - component: {fileID: 78219184}
+  - component: {fileID: 78219187}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -418,6 +430,18 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &78219187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78219182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce909f2660c519844a4425fdc91daa7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &131582212
 GameObject:
   m_ObjectHideFlags: 0
@@ -733,7 +757,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 410116488}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 78219187}
+        m_MethodName: CreateIronProcessing
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &410116488
@@ -3385,7 +3420,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2073550721}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 78219187}
+        m_MethodName: CreateResidence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2073550721
@@ -3520,7 +3566,7 @@ PrefabInstance:
     - target: {fileID: 5393388301532982464, guid: affe66bd566d942f78badd68c1a973d1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.84
+      value: 105.8
       objectReference: {fileID: 0}
     - target: {fileID: 5393388301532982464, guid: affe66bd566d942f78badd68c1a973d1,
         type: 3}
@@ -3743,7 +3789,7 @@ PrefabInstance:
     - target: {fileID: 7051956560768922038, guid: ea2d4810dcf0148cbbdf9f05d44ddfe4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.49
+      value: 97
       objectReference: {fileID: 0}
     - target: {fileID: 7051956560768922038, guid: ea2d4810dcf0148cbbdf9f05d44ddfe4,
         type: 3}
