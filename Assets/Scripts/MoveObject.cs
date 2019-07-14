@@ -5,6 +5,8 @@ using UnityEngine;
 public class MoveObject : MonoBehaviour
 {
     private bool _mouseState;
+    private bool moveCamera;
+    private Vector3 startPos;
 
     public Camera cam;
 
@@ -18,7 +20,8 @@ public class MoveObject : MonoBehaviour
 
     }
 
-    // Update is called once per frame
+
+// Update is called once per frame
     void Update()
     {
         //Если мы в режиме стройки
@@ -26,6 +29,7 @@ public class MoveObject : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
+                startPos = cam.ScreenToWorldPoint(Input.mousePosition);
                 RaycastHit hitInfo;
                 if (Object == GetClickedObject(out hitInfo))
                 {
@@ -35,18 +39,35 @@ public class MoveObject : MonoBehaviour
                     screenSpace = cam.WorldToScreenPoint(Object.transform.position);
                     offset = Object.transform.position - cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenSpace.z));
                 }
+                else
+                    moveCamera = true;
             }
 
             if (Input.GetMouseButtonUp(0))
             {
                 _mouseState = false;
+                moveCamera = false;
             }
+
+            //if (moveCamera)
+            //{
+            //    Debug.Log("moveCamera");
+            //    if (Input.GetMouseButton(0)) //зажата кнопка мыши
+            //    {
+                    
+            //        Vector3 pos = cam.ScreenToWorldPoint(Input.mousePosition) - startPos;
+            //        Debug.Log(startPos);
+            //        cam.transform.position = new Vector3(cam.transform.position.x - pos.x, cam.transform.position.y,
+            //            cam.transform.position.z - pos.z);
+            //    }
+            //}
 
             if (_mouseState)
             {
                 var curScreenSpace = new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenSpace.z);
                 var curPosition = cam.ScreenToWorldPoint(curScreenSpace) + offset;
                 Object.transform.position = curPosition;
+                //cam.transform.position = curPosition;
             }
         }
     }
